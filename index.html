@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>English to Bokcs</h1>
+  </head>
+  <body>
+    <script>
+        
+    </script>
+    <form name="myform">
+        <label for="code">Enter the code</label><br>
+        <input type="text" name="mycode"  id="txt-submit"><br>
+        <input type="button"  value="Submit" id="btn-submit" onClick="submitMyCode()">
+      </form> 
+      <!-- <p>"/action_page.php".</p> -->
+      <script>
+        //console.log(attemptAtCode);
+        var code='1';
+    function submitMyCode () {
+        var attemptAtCode=document.myform.mycode.value;
+        console.log(attemptAtCode);
+         if (attemptAtCode==code) {
+             console.log('blob')
+            //src="translater.html";
+            location.href = 'translater.html'
+         } else {
+             innerHTML = 'wrong'
+
+         }
+    }
+      </script>
+      <!-- <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form> -->
+  </body>
+</html>
